@@ -1,7 +1,11 @@
-# Lawrence A. Murakami at ARSC
+# LAM Sites in the cloud
 
 [sites.lam1.us](http://sites.lam1.us/)
 [sites.lamurakami.com](http://sites.lamurakami.com/)
+
+This is one of the additional-sites of the Linux Apache MariaDB in the cloud
+AWS EC2 instance described in the
+[no-ssl repo README.md](https://github.com/LAMurakami/no-ssl#readme)
 
 This repo contains content in the html folder and an apache2 configuration
 that can be implemented with:
