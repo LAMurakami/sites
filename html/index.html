@@ -14,12 +14,14 @@ LAMurakami GitHub Pages Blog</a></h2>
 These sites use Dynamic Domain Name Services to allow servers that get
 a dynamically assigned IP Address to "check in" as the server for sets
 of virtual hosts.
+<p>
+The DuckDNS service I use currently (in 2024) only partially supports IPv6.  The service allows IPv6 addresses to be set but updates are accepted only from an IPv4 interface.  The DNS A records for IPv4 addresses and the DNS AAAA records for IPv6 addresses can be set to point to different servers.  Most dual stack implementations by default use an IPv6 if present for a domain name and revert to IPv4 communications only when IPv6 is not available.
 
 <h2><span id="lamurakami">
 <a href="https://lamurakami.duckdns.org">lamurakami.duckdns.org</a></span>
  - Linux Apache MariaDB in the cloud.
 </h2>
-
+This domain name points to the main server instance in my Virtual Private Cloud. For the foreseeable future this will be a dual stack instance with both IPv4 and IPv6 public internet addresses.
     <ul>
     <li><a href="https://sites.lamurakami.com/">    * https://sites.lamurakami.com  </a></li>
     <li><a href="https://z.lamurakami.com/">    * https://z.lamurakami.com  </a></li>
@@ -43,12 +45,17 @@ of virtual hosts.
  and
 <a href="http://www.muramg.info/About">     * http://www.muramg.info  </a>
  </li>
+<br>
+    <li><a href="https://LAMurakami.com/?lam">
+                                            * https://LAMurakami.com  </a>
+ - Second Domain name</li>
 </ul>
 
 <h2><span id="lam1">
 <a href="https://lam1.duckdns.org">lam1.duckdns.org</a></span>
  - Linux Apache MariaDB in the cloud.
 </h2>
+This domain name points to the main testing instance.  Upgrades and changes to the aws server are tested before being applied to the main server instance.  When not used for testing this domain name points to the main server instance in my Virtual Private Cloud.
 <ul>
     <li><a href="https://sites.LAM1.us/">    * https://sites.LAM1.us  </a>
  - This site which may link to my others</li>
@@ -64,19 +71,12 @@ of virtual hosts.
  - Arctic Region Supercomputing Center people page</li>
     <li><a href="https://blinkenshell.lam1.us/">        * https://blinkenshell.lam1.us  </a>
  - Clone of http://lam.blinkenshell.org</li>
-<br>
-    <li><a href="https://LAMurakami.com/?lam">
-                                            * https://LAMurakami.com  </a>
- - Second Domain name</li>
-    <li><a href="https://LarryMurakami.com">
-                                            * https://LarryMurakami.com</a>
- - 2014 another domain name</li>
 </ul>
-This instance is the main testing instance.  Upgrades and changes to the aws server are tested before being applied to the main server instance.
 <h2><span id="lam2">
 <a href="https://lam2.duckdns.org">lam2.duckdns.org</a></span>
  - SSH SOCKS5 Proxy in the cloud.
 </h2>
+This domain name is a second for testing.  Alternate Operating Systems are tested using this domain name which is used in less CNAME DNS records.  Since 2024 when AWS started charging hourly for a public IPv4 address as much as a nano instance most of my test instances have only an IPv6 public address costing me half as much as a dual stack instance.
 <ul>
     <li><a href="https://sites.larrymurakami.com/">    * https://sites.larrymurakami.com  </a></li>
     <li><a href="https://z.larrymurakami.com/">    * https://z.larrymurakami.com  </a></li>
@@ -132,6 +132,7 @@ CNAME target of
 <a href="https://lam1ak.duckdns.org">lam1ak.duckdns.org</a></span>
  - Linux Apache MariaDB at home in Alaska.
 </h2>
+This domain name points to my LAN at home in Alaska.  Port Forwarding on the router supplied by my ISP allows me to direct traffic for a port to a specific server on the LAN.  The router provided by my ISP currently provides only an IPv4 address for the external interface and only IPv4 addresses on the LAN.
 
     <ul>
     <li><a href="https://ak20.lam1.us/?lam">
@@ -153,6 +154,7 @@ CNAME target of
 <a href="https://larryforalaska.duckdns.org">larryforalaska.duckdns.org</a></span>
  - CNAME target of LarryForAlaska
 </h2>
+This domain name is used for a second server instance in my Virtual Private Cloud.  In 2024 this second instance handles IPv6 traffic only.
     <ul>
     <li><a href="https://sites.larryforalaska.com/">    * https://sites.larryforalaska.com  </a></li>
     <li><a href="https://z.larryforalaska.com/">    * https://z.larryforalaska.com  </a></li>
