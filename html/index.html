@@ -17,9 +17,13 @@ of virtual hosts.
 <p>
 The DuckDNS service I use currently (in 2024) only partially supports IPv6.  The service allows IPv6 addresses to be set but updates are accepted only from an IPv4 interface.  The DNS A records for IPv4 addresses and the DNS AAAA records for IPv6 addresses can be set to point to different servers.  Most dual stack implementations by default use an IPv6 if present for a domain name and revert to IPv4 communications only when IPv6 is not available.
 
-<h2><span id="lamurakami">
+<h2>
+<table><tr><td><span id="lamurakami">
+<a href="https://lamurakami.freeddns.org">lamurakami.freeddns.org</a><br>
 <a href="https://lamurakami.duckdns.org">lamurakami.duckdns.org</a></span>
+</td><td>
  - Linux Apache MariaDB in the cloud.
+</td></tr></table>
 </h2>
 This domain name points to the main server instance in my Virtual Private Cloud. For the foreseeable future this will be a dual stack instance with both IPv4 and IPv6 public internet addresses.
     <ul>
@@ -54,9 +58,13 @@ This domain name points to the main server instance in my Virtual Private Cloud.
  - Second Domain name</li>
 </ul>
 
-<h2><span id="lam1">
+<h2>
+<table><tr><td><span id="lam1">
+<a href="https://lam1.freeddns.org">lam1.freeddns.org</a><br>
 <a href="https://lam1.duckdns.org">lam1.duckdns.org</a></span>
+</td><td>
  - Linux Apache MariaDB in the cloud.
+</td></tr></table>
 </h2>
 This domain name points to the main testing instance.  Upgrades and changes to the aws server are tested before being applied to the main server instance.  When not used for testing this domain name points to the main server instance in my Virtual Private Cloud.
 <ul>
@@ -77,10 +85,16 @@ This domain name points to the main testing instance.  Upgrades and changes to t
     <li><a href="https://cape_fairbanks.lam1.us/">        * https://cape_fairbanks.lam1.us  </a>
  - CAPE Fairbanks</li>
 </ul>
-<h2><span id="lam2">
+<h2>
+<table><tr><td><span id="lam2">
+<a href="https://lam2.freeddns.org">lam2.freeddns.org</a>
+<a href="http://lam2.freeddns.org"> http: </a>
+<br>
 <a href="https://lam2.duckdns.org">lam2.duckdns.org</a></span>
 <a href="http://lam2.duckdns.org"> http: </a>
+</td><td>
  - SSH SOCKS5 Proxy in the cloud.
+</td></tr></table>
 </h2>
 This domain name is a second for testing.  Alternate Operating Systems are tested using this domain name which is used in less CNAME DNS records.  Since 2024 when AWS started charging hourly for a public IPv4 address as much as a nano instance most of my test instances have only an IPv6 public address costing me half as much as a dual stack instance.
 <p>
@@ -152,9 +166,13 @@ CNAME target of
 - published from gh-pages branch using Jekyll Cayman theme</li>
 </ul>
 
-<h2><span id="lam1ak">
+<h2>
+<table><tr><td><span id="lam1ak">
+<a href="https://lam3.freeddns.org">lam3.freeddns.org</a><br>
 <a href="https://lam1ak.duckdns.org">lam1ak.duckdns.org</a></span>
+</td><td>
  - Linux Apache MariaDB at home in Alaska.
+</td></tr></table>
 </h2>
 This domain name points to my LAN at home in Alaska.  Port Forwarding on the router supplied by my ISP allows me to direct traffic for a port to a specific server on the LAN.  The router provided by my ISP currently provides only an IPv4 address for the external interface and only IPv4 addresses on the LAN.
 
